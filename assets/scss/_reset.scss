@@ -1,0 +1,22 @@
+/* =Reset
+-------------------------------------------------------------- */
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: {
+        image: url("../images/header.png");
+        repeat: no-repeat;
+        size: 100% auto;
+        position: 0 -50px;
+        attachment: fixed;
+    }
+}
+
+ul {
+    list-style: none;
+}

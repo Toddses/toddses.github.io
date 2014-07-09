@@ -1,0 +1,40 @@
+/* =Typography
+-------------------------------------------------------------- */
+
+body {
+    font-family: $base-font;
+    font-color: $body-text-color;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, small {
+    display: inline;
+    font-family: $base-font;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+small {
+    font-size: 12px;
+}
+
+.main-nav {
+    span {
+        color: $menu-text-color;
+    }
+    span:hover {
+        color: $menu-hover-color;
+        cursor: pointer;
+    }
+}
