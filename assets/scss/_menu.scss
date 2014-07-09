@@ -2,10 +2,18 @@
 -------------------------------------------------------------- */
 
 .main-nav {
-        margin-left: 40px;
+        //margin-left: 40px;
+
+        ul {
+            padding: 0;
+        }
+
+        span {
+            padding-left: 40px;
+        }
 
         li {
-            width: 90%;
+            //width: 90%;
             padding: 10px 0 15px 0;
             border-bottom: $menu-border;
         }

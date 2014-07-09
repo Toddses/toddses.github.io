@@ -85,20 +85,21 @@ ul {
     position: relative;
     padding-bottom: 75%;
     margin-top: 5px;
+    margin-left: 5px;
     height: 0;
     overflow: hidden;
     /*@include responsive(medium-screens) {
-        width: 860px;
-    }
-    @include responsive(small-screens) {
-        width: 310px;
-    }
-    @include responsive(large-screens) {
-        width: 860px;
-    }
-    @include responsive(wide-screens) {
-        width: 1010px;
-    }*/ }
+            width: 860px;
+        }
+        @include responsive(small-screens) {
+            width: 310px;
+        }
+        @include responsive(large-screens) {
+            width: 860px;
+        }
+        @include responsive(wide-screens) {
+            width: 1010px;
+        }*/ }
     .content-wrap .registry-wrap iframe {
       position: absolute;
       top: 0;
@@ -127,16 +128,17 @@ ul {
 
 /* =Menu
 -------------------------------------------------------------- */
-.main-nav {
-  margin-left: 40px; }
-  .main-nav li {
-    width: 90%;
-    padding: 10px 0 15px 0;
-    border-bottom: 1px solid #bbbbbb; }
-  .main-nav li:first-child {
-    padding-top: 0; }
-  .main-nav li:last-child {
-    border-bottom: none; }
+.main-nav ul {
+  padding: 0; }
+.main-nav span {
+  padding-left: 40px; }
+.main-nav li {
+  padding: 10px 0 15px 0;
+  border-bottom: 1px solid #bbbbbb; }
+.main-nav li:first-child {
+  padding-top: 0; }
+.main-nav li:last-child {
+  border-bottom: none; }
 
 /* =Typography
 -------------------------------------------------------------- */

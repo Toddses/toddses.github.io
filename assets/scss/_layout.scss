@@ -81,25 +81,26 @@
     border-top: $header-border;
 
     .registry-wrap {
-    display: none;
-    position: relative;
-    padding-bottom: 75%;
-    margin-top: 5px;
-    height: 0;
-    overflow: hidden;
+        display: none;
+        position: relative;
+        padding-bottom: 75%;
+        margin-top: 5px;
+        margin-left: 5px;
+        height: 0;
+        overflow: hidden;
 
-    /*@include responsive(medium-screens) {
-        width: 860px;
-    }
-    @include responsive(small-screens) {
-        width: 310px;
-    }
-    @include responsive(large-screens) {
-        width: 860px;
-    }
-    @include responsive(wide-screens) {
-        width: 1010px;
-    }*/
+        /*@include responsive(medium-screens) {
+            width: 860px;
+        }
+        @include responsive(small-screens) {
+            width: 310px;
+        }
+        @include responsive(large-screens) {
+            width: 860px;
+        }
+        @include responsive(wide-screens) {
+            width: 1010px;
+        }*/
 
         iframe {
             position: absolute;
