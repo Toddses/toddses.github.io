@@ -4,7 +4,6 @@
 // coloring or the sizing, can be done in one place, not all over the stylesheet.
 
 $base-font: 'Roboto Condensed', sans-serif;
-//$secondary-font: "PT Serif";
 
 // base color scheme
 $black: #000000;
@@ -23,9 +22,6 @@ $masthead-background-color: $transparent-gray;
 $body-text-color: $dark-gray;
 $menu-text-color: $light-gray;
 $menu-hover-color: $dark-gray;
-//$link-color: $light-blue;
-//$link-visited: $light-blue;
-//$link-hover: $dark-blue;
 
 // base style settings
 $header-border: 2px solid $darker-gray;
@@ -33,9 +29,7 @@ $header-text-shadow: 1px 1px 2px $black;
 $footer-border: 1px solid $lighter-gray;
 $menu-border: 1px solid $lighter-gray;
 
-// Supported Values for $layout:
-//  null | content-sidebar | sidebar-content
-//$layout: null !default;
-//$vspacing: 1.5em;
-
-//$max-row-width: 1100px;
+// responsive settings
+$break-small: 320px;
+$break-medium: 640px;
+$break-large: 1110px;
