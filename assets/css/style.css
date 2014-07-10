@@ -70,7 +70,7 @@ ul {
       list-style: none; }
       @media only screen and (max-width: 480px) {
         .header-wrap .masthead #social {
-          top: 15px; } }
+          margin-top: 0; } }
       @media only screen and (min-width: 481px) and (max-width: 859px) {
         .header-wrap .masthead #social {
           top: -8px; } }
