@@ -48,6 +48,19 @@
             }
         }
 
+        /*.menu-dropdown {
+            z-index: 99;
+
+            &:before {
+                content: "≡";
+                border: 1px solid black;
+                border-radius: 4px;
+                padding: 3px 10px;
+                position: relative;
+                font-size: 250%;
+            }
+        }*/
+
         #social {
             @extend .social-icons;
             list-style: none;
