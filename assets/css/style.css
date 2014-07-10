@@ -4,14 +4,8 @@
 html, body {
   width: 100%;
   margin: 0;
-  padding: 0; }
-
-body {
-  background-image: url("../images/header.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: 0 -50px;
-  background-attachment: fixed; }
+  padding: 0;
+  background: #f2f8ff; }
 
 ul {
   list-style: none; }
@@ -27,21 +21,53 @@ ul {
 -------------------------------------------------------------- */
 .header-wrap {
   color: #ffffff;
-  text-shadow: 1px 1px 2px #000000; }
+  text-shadow: 1px 1px 2px #000000;
+  border-bottom: 2px solid #222222;
+  z-index: 99;
+  background-image: url("../images/header.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 -50px;
+  background-attachment: fixed; }
   .header-wrap .masthead {
     display: none;
     position: fixed;
     width: 100%;
-    height: 50px;
     z-index: 99;
     background-color: rgba(100, 100, 100, 0.8);
     border-bottom: 2px solid #222222; }
+    @media only screen and (max-width: 480px) {
+      .header-wrap .masthead {
+        height: 68px; } }
+    @media only screen and (min-width: 481px) and (max-width: 859px) {
+      .header-wrap .masthead {
+        height: 50px; } }
+    @media only screen and (min-width: 861px) and (max-width: 1109px) {
+      .header-wrap .masthead {
+        height: 50px; } }
+    @media only screen and (min-width: 1110px) {
+      .header-wrap .masthead {
+        height: 50px; } }
     .header-wrap .masthead #title {
       float: left;
-      padding: 5px 0 0 20px; }
+      padding: 3px 0 0 10px; }
+      @media only screen and (max-width: 480px) {
+        .header-wrap .masthead #title h2 {
+          font-size: 24px; } }
     .header-wrap .masthead #social {
-      top: -8px;
       list-style: none; }
+      @media only screen and (max-width: 480px) {
+        .header-wrap .masthead #social {
+          top: 15px; } }
+      @media only screen and (min-width: 481px) and (max-width: 859px) {
+        .header-wrap .masthead #social {
+          top: -8px; } }
+      @media only screen and (min-width: 861px) and (max-width: 1109px) {
+        .header-wrap .masthead #social {
+          top: -8px; } }
+      @media only screen and (min-width: 1110px) {
+        .header-wrap .masthead #social {
+          top: -8px; } }
       .header-wrap .masthead #social li {
         display: inline; }
         .header-wrap .masthead #social li img {
@@ -50,44 +76,124 @@ ul {
           width: 32px;
           height: 32px; }
   .header-wrap .title-wrap {
-    height: 380px; }
+    white-space: nowrap; }
+    @media only screen and (max-width: 480px) {
+      .header-wrap .title-wrap {
+        height: 108px; } }
+    @media only screen and (min-width: 481px) and (max-width: 859px) {
+      .header-wrap .title-wrap {
+        height: 220px; } }
+    @media only screen and (min-width: 861px) and (max-width: 1109px) {
+      .header-wrap .title-wrap {
+        height: 380px; } }
+    @media only screen and (min-width: 1110px) {
+      .header-wrap .title-wrap {
+        height: 380px; } }
     .header-wrap .title-wrap .top-title {
-      width: 50%;
-      text-align: right;
-      margin: 0 auto;
-      padding-top: 50px; }
-    .header-wrap .title-wrap .main-title {
-      line-height: 70px;
+      margin: 0 auto; }
+      @media only screen and (max-width: 480px) {
+        .header-wrap .title-wrap .top-title {
+          display: none; } }
+      @media only screen and (min-width: 481px) and (max-width: 859px) {
+        .header-wrap .title-wrap .top-title {
+          width: 100%;
+          padding-top: 20px;
+          text-align: center; } }
+      @media only screen and (min-width: 861px) and (max-width: 1109px) {
+        .header-wrap .title-wrap .top-title {
+          width: 50%;
+          padding-top: 50px;
+          text-align: right; } }
+      @media only screen and (min-width: 1110px) {
+        .header-wrap .title-wrap .top-title {
+          width: 50%;
+          padding-top: 50px;
+          text-align: right; } }
+    .header-wrap .title-wrap .top-title-short {
+      display: none;
       text-align: left;
-      width: 60%;
-      margin: 20px auto; }
+      padding-left: 30px; }
+      .header-wrap .title-wrap .top-title-short h2 {
+        font-size: 20px; }
+      @media only screen and (max-width: 480px) {
+        .header-wrap .title-wrap .top-title-short {
+          display: block; } }
+    @media only screen and (max-width: 480px) {
+      .header-wrap .title-wrap .main-title {
+        padding-left: 20px; }
+        .header-wrap .title-wrap .main-title h3 {
+          font-size: 35px; } }
+    @media only screen and (min-width: 481px) and (max-width: 859px) {
+      .header-wrap .title-wrap .main-title {
+        width: 100%;
+        margin: 10px auto 0 auto;
+        line-height: 70px;
+        text-align: center; } }
+    @media only screen and (min-width: 861px) and (max-width: 1109px) {
+      .header-wrap .title-wrap .main-title {
+        width: 60%;
+        margin: 20px auto;
+        line-height: 70px;
+        text-align: left; } }
+    @media only screen and (min-width: 1110px) {
+      .header-wrap .title-wrap .main-title {
+        width: 60%;
+        margin: 20px auto;
+        line-height: 70px;
+        text-align: left; } }
     .header-wrap .title-wrap .bottom-title {
-      width: 50%;
-      text-align: center;
-      margin: 70px auto 0 auto; }
-    .header-wrap .title-wrap .social-wrap {
-      margin-top: 30px; }
-      .header-wrap .title-wrap .social-wrap li {
-        display: inline; }
-        .header-wrap .title-wrap .social-wrap li img {
-          opacity: 0.8;
-          filter: alpha(opacity=80);
-          width: 32px;
-          height: 32px; }
+      text-align: center; }
+      @media only screen and (max-width: 480px) {
+        .header-wrap .title-wrap .bottom-title {
+          display: none; } }
+      @media only screen and (min-width: 481px) and (max-width: 859px) {
+        .header-wrap .title-wrap .bottom-title {
+          width: 100%;
+          margin: 0 auto; } }
+      @media only screen and (min-width: 861px) and (max-width: 1109px) {
+        .header-wrap .title-wrap .bottom-title {
+          width: 50%;
+          margin: 70px auto 0 auto; } }
+      @media only screen and (min-width: 1110px) {
+        .header-wrap .title-wrap .bottom-title {
+          width: 50%;
+          margin: 70px auto 0 auto; } }
+    @media only screen and (max-width: 480px) {
+      .header-wrap .title-wrap .social-wrap {
+        top: 2px; }
+        .header-wrap .title-wrap .social-wrap ul {
+          margin: 0; } }
+    @media only screen and (min-width: 481px) and (max-width: 859px) {
+      .header-wrap .title-wrap .social-wrap {
+        top: -2px; }
+        .header-wrap .title-wrap .social-wrap ul {
+          margin: 0; } }
+    @media only screen and (min-width: 861px) and (max-width: 1109px) {
+      .header-wrap .title-wrap .social-wrap {
+        margin-top: 30px; } }
+    @media only screen and (min-width: 1110px) {
+      .header-wrap .title-wrap .social-wrap {
+        margin-top: 30px; } }
+    .header-wrap .title-wrap .social-wrap li {
+      display: inline; }
+      .header-wrap .title-wrap .social-wrap li img {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        width: 32px;
+        height: 32px; }
 
 .content-wrap {
   background: #f2f8ff;
   height: 100%;
   color: #444444;
-  border-top: 2px solid #222222; }
+  position: relative; }
   .content-wrap .registry-wrap {
     display: none;
     position: relative;
     padding-bottom: 75%;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin: 5px;
     height: 0;
-    overflow: hidden;
+    min-height: 480px;
     /*@include responsive(medium-screens) {
             width: 860px;
         }
@@ -129,7 +235,8 @@ ul {
 /* =Menu
 -------------------------------------------------------------- */
 .main-nav ul {
-  padding: 0; }
+  padding: 10px 0;
+  margin: 0; }
 .main-nav span {
   padding-left: 40px; }
 .main-nav li {
@@ -144,7 +251,7 @@ ul {
 -------------------------------------------------------------- */
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  font-color: #444444;
+  color: #444444;
   font-size: 18px; }
 
 h1, h2, h3, h4, h5, h6, small {

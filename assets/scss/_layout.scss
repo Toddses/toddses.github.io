@@ -4,27 +4,66 @@
 .header-wrap {
     color: $header-text-color;
     text-shadow: $header-text-shadow;
+    border-bottom: $header-border;
+    z-index: 99;
+    background: {
+        image: url("../images/header.png");
+        repeat: no-repeat;
+        size: 100% auto;
+        position: 0 -50px;
+        attachment: fixed;
+    }
 
     .masthead {
         display: none;
         position: fixed;
         width: 100%;
-        height: 50px;
         z-index: 99;
         background: {
             color: $masthead-background-color;
         }
         border-bottom: $header-border;
 
+        @include responsive(small-screens) {
+            height: 68px;
+        }
+        @include responsive(medium-screens) {
+            height: 50px;
+        }
+        @include responsive(large-screens) {
+            height: 50px;
+        }
+        @include responsive(wide-screens) {
+            height: 50px;
+        }
+
         #title {
             float: left;
-            padding: 5px 0 0 20px;
+            padding: 3px 0 0 10px;
+
+            @include responsive(small-screens) {
+                h2 {
+                    font-size: 24px;
+                }
+            }
         }
 
         #social {
             @extend .social-icons;
-            top: -8px;
             list-style: none;
+
+            @include responsive(small-screens) {
+                top: 15px;
+            }
+            @include responsive(medium-screens) {
+                top: -8px;
+            }
+            @include responsive(large-screens) {
+                top: -8px;
+            }
+            @include responsive(wide-screens) {
+                top: -8px;
+            }
 
             li {
                 display: inline;
@@ -37,31 +76,129 @@
     }
 
     .title-wrap {
-        height: 380px;
+        white-space: nowrap;
+
+        @include responsive(small-screens) {
+            height: 108px;
+        }
+        @include responsive(medium-screens) {
+            height: 220px;
+        }
+        @include responsive(large-screens) {
+            height: 380px;
+        }
+        @include responsive(wide-screens) {
+            height: 380px;
+        }
 
         .top-title {
-            width: 50%;
-            text-align: right;
             margin: 0 auto;
-            padding-top: 50px;
+
+            @include responsive(small-screens) {
+                display: none;
+            }
+            @include responsive(medium-screens) {
+                width: 100%;
+                padding-top: 20px;
+                text-align: center;
+            }
+            @include responsive(large-screens) {
+                width: 50%;
+                padding-top: 50px;
+                text-align: right;
+            }
+            @include responsive(wide-screens) {
+                width: 50%;
+                padding-top: 50px;
+                text-align: right;
+            }
+        }
+
+        .top-title-short {
+            display: none;
+            text-align: left;
+            //margin-right: 5px;
+            padding-left: 30px;
+
+            h2 {
+                font-size: 20px;
+            }
+
+            @include responsive(small-screens) {
+                display: block;
+            }
         }
 
         .main-title {
-            line-height: 70px;
-            text-align: left;
-            width: 60%;
-            margin: 20px auto;
+            @include responsive(small-screens) {
+                padding-left: 20px;
+
+                h3 {
+                    font-size: 35px;
+                }
+            }
+            @include responsive(medium-screens) {
+                width: 100%;
+                margin: 10px auto 0 auto;
+                line-height: 70px;
+                text-align: center;
+            }
+            @include responsive(large-screens) {
+                width: 60%;
+                margin: 20px auto;
+                line-height: 70px;
+                text-align: left;
+            }
+            @include responsive(wide-screens) {
+                width: 60%;
+                margin: 20px auto;
+                line-height: 70px;
+                text-align: left;
+            }
         }
 
         .bottom-title {
-            width: 50%;
             text-align: center;
-            margin: 70px auto 0 auto;
+
+            @include responsive(small-screens) {
+                display: none;
+            }
+            @include responsive(medium-screens) {
+                width: 100%;
+                margin: 0 auto;
+            }
+            @include responsive(large-screens) {
+                width: 50%;
+                margin: 70px auto 0 auto;
+            }
+            @include responsive(wide-screens) {
+                width: 50%;
+                margin: 70px auto 0 auto;
+            }
         }
 
         .social-wrap {
             @extend .social-icons;
-            margin-top: 30px;
+            @include responsive(small-screens) {
+                top: 2px;
+
+                ul {
+                    margin: 0;
+                }
+            }
+            @include responsive(medium-screens) {
+                top: -2px;
+
+                ul {
+                    margin: 0;
+                }
+            }
+            @include responsive(large-screens) {
+                margin-top: 30px;
+            }
+            @include responsive(wide-screens) {
+                margin-top: 30px;
+            }
 
             li {
                 display: inline;
@@ -78,16 +215,15 @@
     background: $background-color;
     height: 100%;
     color: $body-text-color;
-    border-top: $header-border;
+    position: relative;
 
     .registry-wrap {
         display: none;
         position: relative;
         padding-bottom: 75%;
-        margin-top: 5px;
-        margin-left: 5px;
+        margin: 5px;
         height: 0;
-        overflow: hidden;
+        min-height: 480px;
 
         /*@include responsive(medium-screens) {
             width: 860px;
