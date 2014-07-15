@@ -1,0 +1,69 @@
+/* =Social
+-------------------------------------------------------------- */
+
+.social-wrap {
+    @extend .social-icons;
+
+    ul {
+        margin: 0;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: block;
+                width: 32px;
+                height: 32px;
+                background-image: url("../images/icons/social-sprite.png");
+            }
+            a#facebook-pink  { background-position: 0px 0px; }
+            a#twitter-pink   { background-position: -32px 0px; }
+            a#etsy-pink      { background-position: -64px 0px; }
+            a#gplus-pink     { background-position: -96px 0px; }
+            a#pinterest-pink { background-position: -128px 0px; }
+            a#rss-pink       { background-position: -160px 0px; }
+            a#email-pink     { background-position: -192px 0px; }
+            a#facebook-blue  { background-position: 0px -32px; }
+            a#twitter-blue   { background-position: -32px -32px; }
+            a#etsy-blue      { background-position: -64px -32px; }
+            a#gplus-blue     { background-position: -96px -32px; }
+            a#pinterest-blue { background-position: -128px -32px; }
+            a#rss-blue       { background-position: -160px -32px; }
+            a#email-blue     { background-position: -192px -32px; }
+            
+            img {  
+                @include social-icon-img;
+            }
+        }
+    }
+}
+
+.title-wrap .social-wrap {
+    @include responsive(small-screens) {
+        top: 2px;
+    }
+    @include responsive(medium-screens) {
+        top: -2px;
+    }
+    @include responsive(large-screens) {
+        margin-top: 48px;
+    }
+    @include responsive(wide-screens) {
+        margin-top: 48px;
+    }
+}
+
+.masthead .social-wrap {
+    @include responsive(small-screens) {
+        margin-top: 0;
+    }
+    @include responsive(medium-screens) {
+        margin-top: 10px;
+    }
+    @include responsive(large-screens) {
+        margin-top: 10px;
+    }
+    @include responsive(wide-screens) {
+        margin-top: 10px;
+    }
+}

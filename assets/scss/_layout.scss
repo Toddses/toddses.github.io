@@ -61,7 +61,7 @@
             }
         }*/
 
-        #social {
+        /*#social {
             @extend .social-icons;
             list-style: none;
 
@@ -85,7 +85,7 @@
                     @include social-icon-img;
                 }
             }
-        }
+        }*/
     }
 
     .title-wrap {
@@ -187,38 +187,6 @@
             @include responsive(wide-screens) {
                 width: 50%;
                 margin: 70px auto 0 auto;
-            }
-        }
-
-        .social-wrap {
-            @extend .social-icons;
-            @include responsive(small-screens) {
-                top: 2px;
-
-                ul {
-                    margin: 0;
-                }
-            }
-            @include responsive(medium-screens) {
-                top: -2px;
-
-                ul {
-                    margin: 0;
-                }
-            }
-            @include responsive(large-screens) {
-                margin-top: 30px;
-            }
-            @include responsive(wide-screens) {
-                margin-top: 30px;
-            }
-
-            li {
-                display: inline;
-
-                img {  
-                    @include social-icon-img;
-                }
             }
         }
     }

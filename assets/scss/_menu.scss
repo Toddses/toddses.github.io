@@ -2,8 +2,6 @@
 -------------------------------------------------------------- */
 
 .main-nav {
-        //margin-left: 40px;
-
         ul {
             padding: 10px 0;
             margin: 0;
@@ -15,9 +13,9 @@
         }
 
         li {
-            //width: 90%;
             padding: 10px 0 15px 0;
             border-bottom: $menu-border;
+
         }
         li:first-child {
             padding-top: 0;
