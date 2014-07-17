@@ -2,3 +2,7 @@
 package.json
 gulpfile.js
 node_modules/
+
+# old junk
+old-index.html
+assets/unused/

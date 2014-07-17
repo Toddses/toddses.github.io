@@ -3,6 +3,7 @@
 
 .social-wrap {
     @extend .social-icons;
+    top: 4px;
 
     ul {
         margin: 0;
@@ -38,32 +39,6 @@
     }
 }
 
-.title-wrap .social-wrap {
-    @include responsive(small-screens) {
-        top: 2px;
-    }
-    @include responsive(medium-screens) {
-        top: -2px;
-    }
-    @include responsive(large-screens) {
-        margin-top: 48px;
-    }
-    @include responsive(wide-screens) {
-        margin-top: 48px;
-    }
-}
-
 .masthead .social-wrap {
-    @include responsive(small-screens) {
-        margin-top: 0;
-    }
-    @include responsive(medium-screens) {
-        margin-top: 10px;
-    }
-    @include responsive(large-screens) {
-        margin-top: 10px;
-    }
-    @include responsive(wide-screens) {
-        margin-top: 10px;
-    }
+    margin-right: 10px;
 }

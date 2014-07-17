@@ -1,11 +1,11 @@
 /* =Layout
 -------------------------------------------------------------- */
 
-.header-wrap {
+header {
     color: $header-text-color;
     text-shadow: $header-text-shadow;
     border-bottom: $header-border;
-    z-index: 99;
+    z-index: 9;
     background: {
         image: url("../images/header.png");
         repeat: no-repeat;
@@ -16,148 +16,94 @@
 
     .masthead {
         display: none;
-        position: fixed;
         width: 100%;
-        z-index: 99;
+        height: 45px;
+        padding: 3px 0 0 10px;
+        position: fixed;
+        z-index: 9;
         background: {
             color: $masthead-background-color;
         }
         border-bottom: $header-border;
 
-        @include responsive(small-screens) {
-            height: 68px;
-        }
-        @include responsive(medium-screens) {
-            height: 50px;
-        }
-        @include responsive(large-screens) {
-            height: 50px;
-        }
-        @include responsive(wide-screens) {
-            height: 50px;
-        }
-
-        #title {
+        .title {
             float: left;
-            padding: 3px 0 0 10px;
-
-            @include responsive(small-screens) {
-                h2 {
-                    font-size: 24px;
-                }
-            }
         }
     }
 
     .title-wrap {
         white-space: nowrap;
+        text-align: center;
+    }
 
-        @include responsive(small-screens) {
-            height: 108px;
+    .top-title-short {
+        text-align: left;
+        padding-left: 10px;
+
+        h2 {
+            font-size: 20px;
         }
-        @include responsive(medium-screens) {
-            height: 220px;
-        }
-        @include responsive(large-screens) {
-            height: 380px;
-        }
-        @include responsive(wide-screens) {
-            height: 380px;
-        }
+    }
 
-        .top-title {
-            margin: 0 auto;
+    @include responsive(small-screens) {
+        .masthead {
+            height: 68px;
 
-            @include responsive(small-screens) {
-                display: none;
-            }
-            @include responsive(medium-screens) {
-                width: 100%;
-                padding-top: 20px;
-                text-align: center;
-            }
-            @include responsive(large-screens) {
-                width: 50%;
-                padding-top: 50px;
-                text-align: right;
-            }
-            @include responsive(wide-screens) {
-                width: 50%;
-                padding-top: 50px;
-                text-align: right;
-            }
-        }
-
-        .top-title-short {
-            display: none;
-            text-align: left;
-            //margin-right: 5px;
-            padding-left: 30px;
-
-            h2 {
-                font-size: 20px;
-            }
-
-            @include responsive(small-screens) {
-                display: block;
-            }
-        }
-
-        .main-title {
-            @include responsive(small-screens) {
-                padding-left: 20px;
-
-                h3 {
-                    font-size: 35px;
+            .title {
+                float: none;
+                h2 {
+                    font-size: 24px;
                 }
             }
-            @include responsive(medium-screens) {
-                width: 100%;
-                margin: 10px auto 0 auto;
-                line-height: 70px;
-                text-align: center;
-            }
-            @include responsive(large-screens) {
-                width: 60%;
-                margin: 20px auto;
-                line-height: 70px;
-                text-align: left;
-            }
-            @include responsive(wide-screens) {
-                width: 60%;
-                margin: 20px auto;
-                line-height: 70px;
-                text-align: left;
-            }
         }
+        
+        .title-wrap {
+            height: 75px;
+            text-align: left;
 
-        .bottom-title {
-            text-align: center;
+            .top-title       { display: none; }
+            .top-title-short { display: block; }
+            .main-title      { h3 { font-size: 35px; }}
+            .bottom-title    { display: none; }
+        }
+    }
 
-            @include responsive(small-screens) {
-                display: none;
-            }
-            @include responsive(medium-screens) {
-                width: 100%;
-                margin: 0 auto;
-            }
-            @include responsive(large-screens) {
-                width: 50%;
-                margin: 70px auto 0 auto;
-            }
-            @include responsive(wide-screens) {
-                width: 50%;
-                margin: 70px auto 0 auto;
-            }
+    @include responsive(medium-screens) {
+        .title-wrap {
+            height: 220px;
+
+            .top-title       { padding-top: 20px; }
+            .top-title-short { display: none; }
+            .main-title      { margin: 10px 0 10px 0; }
+        }
+    }
+
+    @include responsive(large-screens) {
+        .title-wrap {
+            height: 330px;
+
+            .top-title       { padding-top: 50px; }
+            .top-title-short { display: none; }
+            .main-title      { margin: 20px 0 20px 0; }
+            .bottom-title    { margin-top: 70px; }
+        }
+    }
+
+    @include responsive(wide-screens) {
+        .title-wrap {
+            height: 330px;
+
+            .top-title       { padding-top: 50px; }
+            .top-title-short { display: none; }
+            .main-title      { margin: 20px 0 20px 0; }
+            .bottom-title    { margin-top: 70px; }
         }
     }
 }
 
 .content-wrap {
     background: $background-color;
-    height: 100%;
     color: $body-text-color;
-    position: relative;
 
     .registry-wrap {
         display: none;
@@ -179,26 +125,21 @@
 
     .events-wrap {
         display: none;
-        width: 100%;
         padding: 5px 0 0 20px;
     }
 
     .content {
-        width: 80%;
         text-align: center;
         margin: 50px auto;
     }
 }
 
 .footer-wrap {
-    width: 100%;
     background: $background-color;
 
     .copyright {
-        width: 80%;
         color: $light-gray;
         text-align: center;
-        margin: 0 auto;
         padding: 3px 0;
         border-top: $footer-border;
     }

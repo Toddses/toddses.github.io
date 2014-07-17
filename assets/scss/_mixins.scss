@@ -3,14 +3,11 @@
 
 // social buttons
 @mixin social-icon-img {
-    //opacity: 0.8;
-    //filter: alpha(opacity=80); // for IE8 and earlier
     width: 32px;
     height: 32px;
 }
 
 .social-icons {
-    float: right;
     position: relative;
     padding: 0 5px 0 0;
     opacity: 0.8;
