@@ -37,44 +37,7 @@ ul {
     width: 100%;
     z-index: 99;
     background-color: rgba(100, 100, 100, 0.8);
-    border-bottom: 2px solid #222222;
-    /*.menu-dropdown {
-            z-index: 99;
-
-            &:before {
-                content: "≡";
-                border: 1px solid black;
-                border-radius: 4px;
-                padding: 3px 10px;
-                position: relative;
-                font-size: 250%;
-            }
-        }*/
-    /*#social {
-            @extend .social-icons;
-            list-style: none;
-
-            @include responsive(small-screens) {
-                margin-top: 0;
-            }
-            @include responsive(medium-screens) {
-                top: -8px;
-            }
-            @include responsive(large-screens) {
-                top: -8px;
-            }
-            @include responsive(wide-screens) {
-                top: -8px;
-            }
-
-            li {
-                display: inline;
-
-                img {
-                    @include social-icon-img;
-                }
-            }
-        }*/ }
+    border-bottom: 2px solid #222222; }
     @media only screen and (max-width: 480px) {
       .header-wrap .masthead {
         height: 68px; } }
@@ -188,19 +151,7 @@ ul {
     padding-bottom: 75%;
     margin: 5px;
     height: 0;
-    min-height: 480px;
-    /*@include responsive(medium-screens) {
-            width: 860px;
-        }
-        @include responsive(small-screens) {
-            width: 310px;
-        }
-        @include responsive(large-screens) {
-            width: 860px;
-        }
-        @include responsive(wide-screens) {
-            width: 1010px;
-        }*/ }
+    min-height: 480px; }
     .content-wrap .registry-wrap iframe {
       position: absolute;
       top: 0;
@@ -253,33 +204,33 @@ ul {
       width: 32px;
       height: 32px;
       background-image: url("../images/icons/social-sprite.png"); }
-    .social-wrap ul li a#facebook-pink {
+    .social-wrap ul li a.facebook-pink {
       background-position: 0px 0px; }
-    .social-wrap ul li a#twitter-pink {
+    .social-wrap ul li a.twitter-pink {
       background-position: -32px 0px; }
-    .social-wrap ul li a#etsy-pink {
+    .social-wrap ul li a.etsy-pink {
       background-position: -64px 0px; }
-    .social-wrap ul li a#gplus-pink {
+    .social-wrap ul li a.gplus-pink {
       background-position: -96px 0px; }
-    .social-wrap ul li a#pinterest-pink {
+    .social-wrap ul li a.pinterest-pink {
       background-position: -128px 0px; }
-    .social-wrap ul li a#rss-pink {
+    .social-wrap ul li a.rss-pink {
       background-position: -160px 0px; }
-    .social-wrap ul li a#email-pink {
+    .social-wrap ul li a.email-pink {
       background-position: -192px 0px; }
-    .social-wrap ul li a#facebook-blue {
+    .social-wrap ul li a.facebook-blue {
       background-position: 0px -32px; }
-    .social-wrap ul li a#twitter-blue {
+    .social-wrap ul li a.twitter-blue {
       background-position: -32px -32px; }
-    .social-wrap ul li a#etsy-blue {
+    .social-wrap ul li a.etsy-blue {
       background-position: -64px -32px; }
-    .social-wrap ul li a#gplus-blue {
+    .social-wrap ul li a.gplus-blue {
       background-position: -96px -32px; }
-    .social-wrap ul li a#pinterest-blue {
+    .social-wrap ul li a.pinterest-blue {
       background-position: -128px -32px; }
-    .social-wrap ul li a#rss-blue {
+    .social-wrap ul li a.rss-blue {
       background-position: -160px -32px; }
-    .social-wrap ul li a#email-blue {
+    .social-wrap ul li a.email-blue {
       background-position: -192px -32px; }
     .social-wrap ul li img {
       width: 32px;
