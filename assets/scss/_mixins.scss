@@ -1,19 +1,6 @@
 /* =Mixins
 -------------------------------------------------------------- */
 
-// social buttons
-@mixin social-icon-img {
-    width: 32px;
-    height: 32px;
-}
-
-.social-icons {
-    position: relative;
-    padding: 0 5px 0 0;
-    opacity: 0.8;
-    filter: alpha(opacity=80); // for IE8 and earlier
-}
-
 // responsive media queries
 @mixin responsive($media) {
     @if $media == small-screens {

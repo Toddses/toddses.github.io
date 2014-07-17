@@ -1,8 +1,16 @@
 /* =Social
 -------------------------------------------------------------- */
 
+.social-links {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/icons/social-sprite.png");
+}
+
 .social-wrap {
-    @extend .social-icons;
+    position: relative;
+    padding: 0 5px 0 0;
     top: 4px;
 
     ul {
@@ -16,24 +24,34 @@
                 width: 32px;
                 height: 32px;
                 background-image: url("../images/icons/social-sprite.png");
+                opacity: 0.8;
+                filter: alpha(opacity=80); // for IE8 and earlier
+
+                &:hover {
+                    opacity: 1.0;
+                    filter: alpha(opacity=100); // for IE8 and earlier
+                }
+
+                &.facebook-pink  { background-position: 0px 0px; }
+                &.twitter-pink   { background-position: -32px 0px; }
+                &.etsy-pink      { background-position: -64px 0px; }
+                &.gplus-pink     { background-position: -96px 0px; }
+                &.pinterest-pink { background-position: -128px 0px; }
+                &.rss-pink       { background-position: -160px 0px; }
+                &.email-pink     { background-position: -192px 0px; }
+                &.facebook-blue  { background-position: 0px -32px; }
+                &.twitter-blue   { background-position: -32px -32px; }
+                &.etsy-blue      { background-position: -64px -32px; }
+                &.gplus-blue     { background-position: -96px -32px; }
+                &.pinterest-blue { background-position: -128px -32px; }
+                &.rss-blue       { background-position: -160px -32px; }
+                &.email-blue     { background-position: -192px -32px; }
             }
-            a.facebook-pink  { background-position: 0px 0px; }
-            a.twitter-pink   { background-position: -32px 0px; }
-            a.etsy-pink      { background-position: -64px 0px; }
-            a.gplus-pink     { background-position: -96px 0px; }
-            a.pinterest-pink { background-position: -128px 0px; }
-            a.rss-pink       { background-position: -160px 0px; }
-            a.email-pink     { background-position: -192px 0px; }
-            a.facebook-blue  { background-position: 0px -32px; }
-            a.twitter-blue   { background-position: -32px -32px; }
-            a.etsy-blue      { background-position: -64px -32px; }
-            a.gplus-blue     { background-position: -96px -32px; }
-            a.pinterest-blue { background-position: -128px -32px; }
-            a.rss-blue       { background-position: -160px -32px; }
-            a.email-blue     { background-position: -192px -32px; }
+            
             
             img {  
-                @include social-icon-img;
+                width: 32px;
+                height: 32px;
             }
         }
     }
