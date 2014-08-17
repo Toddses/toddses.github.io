@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
     $("#left-arrow").mousedown(startScrollingLeft).mouseup(stopScrollingLeft);
     $("#right-arrow").mousedown(startScrollingRight).mouseup(stopScrollingRight);
 
-    $("#right-arrow").click(function() {
+    $("#right-arrow").on("touchstart", function() {
         $list.animate({"left": "-=50"}, 100, "linear", startScrollingRight);
     });
 });
