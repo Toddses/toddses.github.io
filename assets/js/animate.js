@@ -51,13 +51,7 @@ jQuery(document).ready(function($) {
     $("#left-arrow").mousedown(startScrollingLeft).mouseup(stopScrollingLeft);
     $("#right-arrow").mousedown(startScrollingRight).mouseup(stopScrollingRight);
 
-    $("#right-arrow").bind("taphold", tapHoldHandler);
-
-    function tapHoldHandler(event) {
-        if (parseInt($list.css("left")) <= listWidth) {
-            $list.animate({"left": listWidth}, 100, "linear");
-        } else {
-            $list.animate({"left": "-=50"}, 100, "linear", startScrollingRight);
-        }
-    }
+    $("#right-arrow").click(function() {
+        $list.animate({"left": "-=50"}, 100, "linear", startScrollingRight);
+    });
 });
