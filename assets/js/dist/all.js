@@ -59,7 +59,18 @@ jQuery(document).ready(function($) {
     });*/
 
     $("#right-arrow a").click(function() {
-        $list.animate({"left": "-=304"}, 100, "linear");
+        if (parseInt($list.css("left")) <= listWidth) {
+            $list.animate({"left": listWidth}, 100, "linear");
+        } else {
+            $list.animate({"left": "-=304"}, 100, "linear");
+        }
+    });
+    $("#left-arrow a").click(function() {
+        if (parseInt($list.css("left")) >= 0) {
+            $list.animate({"left": "0"}, 100, "linear");
+        } else {
+            $list.animate({"left": "+=304"}, 100, "linear");
+        }
     });
 });
 /**
