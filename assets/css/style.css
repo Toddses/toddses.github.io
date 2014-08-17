@@ -346,7 +346,7 @@ header {
         font-size: 35px; }
       header .title-wrap .bottom-title {
         display: none; } }
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
     header .title-wrap {
       height: 220px; }
       header .title-wrap .top-title {
@@ -355,7 +355,7 @@ header {
         display: none; }
       header .title-wrap .main-title {
         margin: 10px 0 10px 0; } }
-  @media only screen and (min-width: 769px) and (max-width: 959px) {
+  @media only screen and (min-width: 769px) and (max-width: 960px) {
     header .title-wrap {
       height: 330px; }
       header .title-wrap .top-title {
@@ -389,10 +389,41 @@ header {
     .content-wrap .registry-item {
       text-align: center;
       width: 100% !important; } }
-  @media only screen and (min-width: 481px) and (max-width: 767px) {
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
     .content-wrap .registry-item {
       text-align: center;
       width: 180px !important; } }
+  .content-wrap .album-wrap {
+    display: none;
+    position: relative;
+    margin: 5px; }
+    .content-wrap .album-wrap .hide-overflow {
+      overflow: hidden;
+      position: relative; }
+    .content-wrap .album-wrap .album-list {
+      position: relative;
+      left: 0; }
+    .content-wrap .album-wrap #left-arrow, .content-wrap .album-wrap #right-arrow {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 50px;
+      position: absolute;
+      top: 90px;
+      z-index: 99;
+      cursor: pointer; }
+      .content-wrap .album-wrap #left-arrow:hover, .content-wrap .album-wrap #right-arrow:hover {
+        color: white; }
+    .content-wrap .album-wrap #left-arrow {
+      left: 10px; }
+    .content-wrap .album-wrap #right-arrow {
+      right: 10px; }
+    .content-wrap .album-wrap ul {
+      list-style: none;
+      white-space: nowrap; }
+    .content-wrap .album-wrap li {
+      display: inline; }
+    @media only screen and (max-width: 480px) {
+      .content-wrap .album-wrap .hide-overflow {
+        width: 280px; } }
   .content-wrap .events-wrap {
     display: none;
     padding: 5px 0 0 20px; }

@@ -123,6 +123,46 @@ header {
         }
     }
 
+    .album-wrap {
+        display: none;
+        position: relative;
+        margin: 5px;
+        //overflow: hidden;
+
+        .hide-overflow {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .album-list {
+            position: relative;
+            left: 0;
+        }
+
+        #left-arrow, #right-arrow {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 50px;
+            position: absolute;
+            top: 90px;
+            z-index: 99;
+            cursor: pointer;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        #left-arrow { left: 10px; }
+        #right-arrow { right: 10px; }
+
+        ul { list-style: none; white-space: nowrap; }
+        li { display: inline; }
+
+        @include responsive(small-screens) {
+            .hide-overflow { width: 280px; }
+        }
+    }
+
     .events-wrap {
         display: none;
         padding: 5px 0 0 20px;
