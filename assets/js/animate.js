@@ -52,6 +52,9 @@ jQuery(document).ready(function($) {
     $("#right-arrow").mousedown(startScrollingRight).mouseup(stopScrollingRight);
 
     $("#right-arrow").on("touchstart", function() {
-        $list.animate({"left": "-=50"}, 100, "linear", startScrollingRight);
+        $list.animate({"left": "-=50"}, 100, "linear");
+    });
+    $("#left-arrow").on("touchstart", function() {
+        $list.animate({"left": "+=50"}, 100, "linear");
     });
 });
