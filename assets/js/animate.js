@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
     var $list = $(".album-list");
     var listWidth = -5785;
 
-    function startScrollingLeft() {
+    /*function startScrollingLeft() {
         // contintually increase scroll position, but don't go past 0
         if (parseInt($list.css("left")) >= 0) {
             $list.animate({"left": "0"}, 100, "linear");
@@ -56,5 +56,9 @@ jQuery(document).ready(function($) {
     });
     $("#left-arrow").on("touchstart", function() {
         $list.animate({"left": "+=50"}, 100, "linear");
+    });*/
+
+    $("#right-arrow a").click(function() {
+        $list.animate({"left": "-=304"}, 100, "linear");
     });
 });

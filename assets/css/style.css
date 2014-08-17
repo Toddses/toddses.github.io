@@ -421,6 +421,9 @@ header {
       white-space: nowrap; }
     .content-wrap .album-wrap li {
       display: inline; }
+    .content-wrap .album-wrap a {
+      text-decoration: none;
+      color: inherit; }
     @media only screen and (max-width: 480px) {
       .content-wrap .album-wrap .hide-overflow {
         width: 280px; } }
