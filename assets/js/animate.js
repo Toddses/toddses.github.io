@@ -19,20 +19,6 @@ jQuery(document).ready(function($) {
         $(".events-wrap").slideToggle("slow");
     });
 
-    function moveLeft() {
-        //if (!isRightMousedown) { return; }
-
-        var newPos = parseInt($(".album-list").css("left")) - 10;
-        $(".album-list").animate({"left": newPos}, "slow");
-            
-        //if (isRightMousedown) { moveLeft(); }
-    }
-
-    //$("#right-arrow").bind("mousedown", function() {
-        //var newPos = parseInt($(".album-list").css("left")) - 10;
-        //$(".album-list").animate({"left": newPos}, "slow");
-    //});
-
     var $list = $(".album-list");
     var listWidth = -5785;
 
@@ -65,15 +51,13 @@ jQuery(document).ready(function($) {
     $("#left-arrow").mousedown(startScrollingLeft).mouseup(stopScrollingLeft);
     $("#right-arrow").mousedown(startScrollingRight).mouseup(stopScrollingRight);
 
-    /*var isRightMousedown = false;
-    $("#right-arrow").mousedown(function() {
-        isRightMousedown = true;
-        moveLeft();
-    }).mouseup(function() {
-        isRightMousedown = false;
-    });*/
-    //$("#right-arrow").click(function() {
-        //var newPos = parseInt($(".album-list").css("left")) - 10;
-        //$(".album-list").animate({"left": newPos}, "slow");
-    //})
+    $("#right-arrow").bind("taphold", tapHoldHandler);
+
+    function tapHoldHandler(event) {
+        if (parseInt($list.css("left")) <= listWidth) {
+            $list.animate({"left": listWidth}, 100, "linear");
+        } else {
+            $list.animate({"left": "-=50"}, 100, "linear", startScrollingRight);
+        }
+    }
 });
